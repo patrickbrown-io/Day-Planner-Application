@@ -1,0 +1,21 @@
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.hour {
+  text-align: center;
+}
+
+.saveBtn {
+  background-color: green;
+  border-color: white;
+}
+
+.saveBtn:hover {
+  background-color: lightgreen;
+  border-color: lightslategrey;
+}
