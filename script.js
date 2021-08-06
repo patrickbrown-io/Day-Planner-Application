@@ -19,6 +19,10 @@
 
 //Displays the current date on the top of the page
 
-var currentTime = moment().format("MMMM Do YYYY, h:mm:ss a");
+var currentTime = moment().format("dddd MMMM Do YYYY, h:mm:ss a");
 $("#current-day").text(currentTime);
 console.log(currentTime);
+
+
+var currentHour = moment().hour();
+
