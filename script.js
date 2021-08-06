@@ -21,10 +21,12 @@ console.log(currentTime);
 var currentHour = moment().hour();
 var hourCompare = moment().format('H')
 
+var saveBtn = $(".saveBtn")
+
 //determines if the time has past, updates block to past, present, future
 console.log(
 
-$('.time-block').each(function(){
+$('.time-block').each (function(){
     if(parseInt($('.time-block').attr('id') ) > hourCompare){
     $(".description").addClass("future")
 
@@ -36,4 +38,16 @@ $('.time-block').each(function(){
     }
 }));
 
+
+console.log(parseInt("24"))
 ////Save button functionality
+
+saveBtn.on("click", function(){
+var time = $(this).siblings(".hour").text();
+var task = $(this).siblings(".description").val();
+
+localStorage.setItem(time,task);
+alert("Your task has been saved!");
+})
+
+//on load?
