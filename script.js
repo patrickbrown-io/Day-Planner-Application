@@ -1,7 +1,3 @@
-// WHEN I refresh the page
-// THEN the saved events persist
-
-
 // //Load Events
     $("#9 .description").val(localStorage.getItem("\n        9:00am\n    "));
     $("#10 .description").val(localStorage.getItem("\n        10:00am\n    "));
@@ -43,8 +39,6 @@ $(".time-block").each(function() {
        $(this).find("textarea").removeClass("past")
     };
 })
-// let time;
-// let task;
 ////Save button functionality
 saveBtn.on("click", function(){
     var time = $(this).siblings(".hour").text();
