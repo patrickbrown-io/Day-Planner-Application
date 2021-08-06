@@ -31,3 +31,7 @@
 .now {
   background-color: green;
 }
+
+textarea {
+  color: white;
+}
