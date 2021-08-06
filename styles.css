@@ -19,3 +19,15 @@
   background-color: lightgreen;
   border-color: lightslategrey;
 }
+
+.past {
+  background-color: #6c757d;
+}
+
+.future {
+  background-color: #0d6efd;
+}
+
+.now {
+  background-color: green;
+}
