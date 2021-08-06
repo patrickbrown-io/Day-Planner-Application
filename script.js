@@ -1,17 +1,17 @@
-
 // WHEN I refresh the page
 // THEN the saved events persist
 
+
 // //Load Events
-    $("#9 .description").val(localStorage.getItem("9:00am"));
-    $("#10 .description").val(localStorage.getItem("10:00am"));
-    $("#11 .description").val(localStorage.getItem("11:00am"));
-    $("#12 .description").val(localStorage.getItem("12:00pm"));
-    $("#13 .description").val(localStorage.getItem("1:00pm"));
-    $("#14 .description").val(localStorage.getItem("2:00pm"));
-    $("#15 .description").val(localStorage.getItem("3:00pm"));
-    $("#16 .description").val(localStorage.getItem("4:00pm"));
-    $("#17 .description").val(localStorage.getItem("5:00pm"));
+    $("#9 .description").val(localStorage.getItem("\n        9:00am\n    "));
+    $("#10 .description").val(localStorage.getItem("\n        10:00am\n    "));
+    $("#11 .description").val(localStorage.getItem("\n        11:00am\n    "));
+    $("#12 .description").val(localStorage.getItem("\n        12:00pm\n    "));
+    $("#13 .description").val(localStorage.getItem("\n        1:00pm\n    "));
+    $("#14 .description").val(localStorage.getItem("\n        2:00pm\n    "));
+    $("#15 .description").val(localStorage.getItem("\n        3:00pm\n    "));
+    $("#16 .description").val(localStorage.getItem("\n        4:00pm\n    "));
+    $("#17 .description").val(localStorage.getItem("\n        5:00pm\n    "));
 
 //Displays the current date on the top of the page
 var currentTime = moment().format("dddd MMMM Do YYYY, h:mm:ss a");
@@ -43,7 +43,8 @@ $(".time-block").each(function() {
        $(this).find("textarea").removeClass("past")
     };
 })
-
+// let time;
+// let task;
 ////Save button functionality
 saveBtn.on("click", function(){
     var time = $(this).siblings(".hour").text();
